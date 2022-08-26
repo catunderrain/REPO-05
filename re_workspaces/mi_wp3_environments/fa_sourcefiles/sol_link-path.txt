@@ -3,4 +3,4 @@ link:
 
 
 code:
-    .\re_workspaces\mi_wp3\fa_envs\sol_py38\Scripts\activate
+    .\re_workspaces\mi_wp3_environments\fa_envs\sol_py38\Scripts\activate
