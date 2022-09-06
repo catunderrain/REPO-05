@@ -1,0 +1,44 @@
+bakery:
+    potato bread 91
+    pizza 60
+    spicypizza 60
+
+bbq drill:
+    fish burger 172
+    fish and chips 136
+    hamburger 114
+    bacon and eggs 101
+
+cake oven:
+    potato feta cake 173
+    cheese cake 157
+    strawberry cake 152
+    cream cake 149
+
+ice cream maker:
+    cherry popsicle 160
+    strawberry ice cream 99
+    vanilla ice cream 90
+
+jam maker:
+    blackberry jam 142
+    cherry jam 130
+    raspberry jam 114
+
+loom:
+    blue sweater 120
+    sweater 113
+
+sewing machine:
+    wooly chaps 168
+
+pie oven:
+    fish pie 207
+    feta pie 156
+    casserole 140
+    bacon pie 128
+
+popcorn:
+    honey popcorn 74
+    butter popcorn 58
+

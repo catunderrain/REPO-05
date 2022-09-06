@@ -1,0 +1,85 @@
+
+    [potato bread]
+    potato x2
+    egg x3
+    white sugar x1
+    butter x1
+
+    [fish pie]
+    fish x6
+    egg x2
+    wheat x4
+
+    [feta pie]
+    goat cheese x1
+    egg x1
+    wheat x1
+
+    [casserole]
+    potato x2
+    bacon x2
+    cheese x1
+    egg x2
+
+    [bacon pie]
+    bacon x3
+    egg x1
+    wheat x2
+
+    [potato feta cake]
+    potato x1
+    goat cheese x1
+    egg x4
+
+    [strawberry cake]
+    wheat x3
+    white sugar x1
+    cream x1
+    strawberry x1
+
+    [cream cake]
+    wheat x5
+    white sugar x1
+    cream x1
+
+    [fish burger]
+    fish x2
+    chili x1
+    bread x2
+
+    [fish and chips]
+    fish x2
+    potato x3
+
+    [hamburger]
+    bread x2
+    bacon x2
+
+    [wooly chaps]
+    fabric x1
+    wool x3
+
+    [jam]
+    blackberry
+    cherry
+
+
+
+
+bread x4
+
+white sugar x3
+syrup x2
+
+goat cheese x2
+cream x3
+
+fish x14
+wool x12
+bacon x4
+goat x4 
+
+chili x2
+potato x16
+sugarcane x20
+cotton x12
