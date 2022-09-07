@@ -35,6 +35,7 @@ strawberry = lambda n = 0: 50 if (n == 0) else n*(50) #0
 potato = lambda n = 0: 36 if (n == 0) else n*(36) #0
 cacao = lambda n = 0: 86 if (n == 0) else n*(86) #0
 honeycomb = lambda n = 0: 68 if (n == 0) else n*(68) #0
+coffeebean = lambda n = 0: 64 if (n == 0) else n*(64) #0
 # khoang san..........................................................................................
 silverore = lambda n = 0: 18 if (n == 0) else n*(0) #18
 goldore = lambda n = 0: 24 if (n == 0) else n*(0) #24
@@ -130,7 +131,10 @@ honeypopcorn = lambda n = 0: 360 if (n == 0) else n*(corn(2) + honey(2)) #74
 diamondring = lambda n = 0: 824 if (n == 0) else n*(diamond(1) + goldbar(2) + platinumbar(2)) #824
 fishandchips = lambda n = 0: 244 if (n == 0) else n*(fishfillet(2) + potato(3)) #136
 ironbracelet = lambda n = 0: 658 if (n == 0) else n*(ironbar(2) + refinedcoal(2) + silverbar(1)) #658 NOTE
+espresso = lambda n = 0: 248 if (n == 0) else n*(coffeebean(3) + whitesugar(1)) #28
+honeyapplecake = lambda n = 0: 482 if (n == 0) else n*(apple(2) + egg(2) + honey(2) + wheat(2)) #100
+caffelatte= lambda n = 0: 219 if (n == 0) else n*(coffeebean(2) + milk(1) + whitesugar(1)) #36
 # print...................................................................................................
 os.system('cls')
-x = fishandchips
+x = caffelatte
 print(f'Sell: +{x()}\nx1: -{x(1)}\nx2:-{x(2)}\nProfit: {profit(x)}')
