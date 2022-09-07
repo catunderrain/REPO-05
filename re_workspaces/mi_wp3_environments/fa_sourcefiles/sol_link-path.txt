@@ -1,6 +1,0 @@
-link:
-    C:\Users\LENOVO\AppData\Local\Programs\Python\Python310
-
-
-code:
-    .\re_workspaces\mi_wp3_environments\fa_envs\sol_py38\Scripts\activate
