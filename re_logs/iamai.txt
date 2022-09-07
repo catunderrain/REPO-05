@@ -1,0 +1,53 @@
+AI Expert in 2022
+    Fundamentals[
+        .Basics
+            Matrices & Linear Algebra Fundamentals
+            Database Basics[
+                Relational vs. non-relational database
+                SQL + Joins(Inner, Outer, Cross, Theta Join)
+                NoSQL
+            ]
+            Tabular Data
+            Data Frames & Series
+            Extract, Transform, Load (ETL)
+            Reporting vs. BI vs. Analytics
+            Data Formats[
+                JSON
+                XML
+                CSV
+            ]
+            Regular Expressions (RegEx)
+        .Python Programing
+            Python Basics[
+                Expressions
+                Variables
+                Data Structures
+                Funtions
+                Install Packages (via pip, conda or similar)
+                codestyle, e.g. PEP8
+            ]
+            Important Library[
+                Numpy
+                Pandas
+            ]
+            Virtual Environments
+            Jupyter Notebooks/Lab
+        .Data Sources
+            Data Mining
+            Web Scraping
+            Awesome Public Datasets
+            Kaggle
+        .Exploratory Data Analytics/Data Munging/-Wrangling
+            Principal Component Analysis(PCA)
+            Dimensionality & Numerosity Reduction
+            Normalization
+            Data Scrubbing, Handling Missing Values
+            Unbiased Estimators
+            Binning sparse Values
+            Feature Extraction
+            Denoising
+            Sampling
+    ]
+    Data scientist
+    Machine Learing
+    Deep Learning
