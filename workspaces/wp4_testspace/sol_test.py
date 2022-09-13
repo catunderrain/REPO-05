@@ -1,5 +1,3 @@
+a = [[1, 2], [3,4]]
 
-
-dict = {}
-dict[a ] = 2
-print
+print(a[:1])

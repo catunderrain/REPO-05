@@ -3,6 +3,7 @@ import numpy as np
 import dlib
 from math import hypot
 
+i = 0
 # Loading Camera and glass image and Creating mask
 cap = cv2.VideoCapture(0)
 glass_image = cv2.imread("D:\\do\\workspaces\\wp1_codespace\\codes\\8-Pignose\\glass.png")
@@ -57,5 +58,8 @@ while True:
         # cv2.imshow("final glass", final_glass)
     cv2.imshow("Frame", cv2.flip(frame, 1))
     key = cv2.waitKey(1)
-    if key == 27:
+    if key == 99:
+        cv2.imwrite(f'D:\\do\\workspaces\\wp1_codespace\\codes\\8-Pignose\\img{i}.png', cv2.flip(frame, 1))
+        i += 1
+    elif key == 27:
         break

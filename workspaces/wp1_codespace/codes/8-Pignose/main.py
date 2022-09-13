@@ -1,3 +1,4 @@
+
 import cv2
 import numpy as np
 import dlib
@@ -10,6 +11,12 @@ _, frame = cap.read()
 rows, cols, _ = frame.shape
 nose_mask = np.zeros((rows, cols), np.uint8)
 
+def rotateImage(image, angle):
+    row,col,_ = image.shape
+    center=tuple(np.array([row,col])/2)
+    rot_mat = cv2.getRotationMatrix2D(center,angle,1.0)
+    new_image = cv2.warpAffine(image, rot_mat, (col,row))
+    return new_image
 # Loading Face detector
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("C:\\Users\\LENOVO\\Documents\\LIBRARIES\\dlib libs\\shape_predictor_68_face_landmarks.dat\\shape_predictor_68_face_landmarks.dat")
@@ -17,7 +24,6 @@ while True:
     _, frame = cap.read()
     nose_mask.fill(0)
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-
     faces = detector(frame)
     for face in faces:
         landmarks = predictor(gray_frame, face)
@@ -28,8 +34,11 @@ while True:
         right_nose = (landmarks.part(35).x, landmarks.part(35).y)
         nose_width = int(hypot(left_nose[0] - right_nose[0], left_nose[1] - right_nose[1]) * 2)
         nose_height = int(nose_width * 0.77)
+        angle = -90 * np.arctan((right_nose[1]-left_nose[1])/(right_nose[0]-left_nose[0]))
+        print(angle)
         # New nose position
         top_left = (int(center_nose[0] - nose_width / 2), int(center_nose[1] - nose_height / 2))
+        center = (int(top_left[0] + nose_width/2), int(top_left[1] + nose_height/2) )
         bottom_right = (int(center_nose[0] + nose_width / 2), int(center_nose[1] + nose_height / 2))
         # Adding the new nose
         nose_pig = cv2.resize(nose_image, (nose_width, nose_height))
@@ -38,7 +47,8 @@ while True:
         nose_area = frame[top_left[1]: top_left[1] + nose_height, top_left[0]: top_left[0] + nose_width]
         nose_area_no_nose = cv2.bitwise_and(nose_area, nose_area, mask=nose_mask)
         final_nose = cv2.add(nose_area_no_nose, nose_pig)
-        frame[top_left[1]: top_left[1] + nose_height, top_left[0]: top_left[0] + nose_width] = final_nose
+        final_nose = rotateImage(final_nose, angle)
+        frame[top_left[1]: top_left[1] + nose_height, top_left[0]: top_left[0] + nose_width] += final_nose
         cv2.imshow("Nose area", nose_area)
         cv2.imshow("Nose pig", nose_pig)
         cv2.imshow("final nose", final_nose)
