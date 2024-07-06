@@ -2,13 +2,6 @@ Exercise:
         Gap bung
         Chong day
         Nhay nhay
-      
-----------------------------------------------------------------------------------------------      
-Nguyen tac dat mat khau:
-        Cat@16youtube
-        Cat@16tiktok
-        Cat@16google
-        Default: Catunderrain@1611
 
 ----------------------------------------------------------------------------------------------  
 Work do a day:
@@ -18,21 +11,6 @@ Work do a day:
         Doc sach hoac mau chuyen nho
         Goi dien cho nguoi than
         Ghi log
-        
-Work do a week:
-        Cho VA di choi 1 lan
-        Cho VA di sieu thi mua do an
-        Cho VA di choi cong vien
-        Dat Mun di dao
-        Nhan tin cho 1 nguoi than
-        Len y tuong ve mot san pham
-        Lam mot dieu moi la
-        
-Work do a month:
-        Tiet kiem tien mua ram
-        Tiet kiem tien tra no
-        Tiet kiem tien tra VA
-        Tiet kiem tien tra tien banh trang
 
 Work do a year:
         Nghien cuu lai cac video tiktok, youtube, facebook da luu
@@ -54,7 +32,6 @@ Link:
         https://www.wallpaperflare.com/anime-manga-anime-girls-simple-background-minimalism-laptop-wallpaper-mauke      wallpapers
         https://www.javatpoint.com/object-recognition-using-python#:~:text=Object%20Recognition%20is%20a%20technology   object detection
                 ,and%20videos%20and%20tracking%20them.
-        https://lagihitech.vn/shop/ram-laptop-ddr4-samsung-8gb-bus-3200-sodimm/                                         link mua ram
         
 ----------------------------------------------------------------------------------------------  
 ----------------------------------------------------------------------------------------------  
