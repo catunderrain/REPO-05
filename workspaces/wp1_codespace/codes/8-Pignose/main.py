@@ -6,7 +6,8 @@ from math import hypot
 
 # Loading Camera and Nose image and Creating mask
 cap = cv2.VideoCapture(0)
-nose_image = cv2.imread("D:\\do\\workspaces\\wp1_codespace\\codes\\8-Pignose\\pignose.png")
+nose_image = cv2.imread(r"C:\Users\Lenovo\Desktop\REPO-05\workspaces\wp1_codespace\codes\8-Pignose\pignose.png")
+nose_image = cv2.cvtColor
 _, frame = cap.read()
 rows, cols, _ = frame.shape
 nose_mask = np.zeros((rows, cols), np.uint8)
@@ -19,9 +20,10 @@ def rotateImage(image, angle):
     return new_image
 # Loading Face detector
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor("C:\\Users\\LENOVO\\Documents\\LIBRARIES\\dlib libs\\shape_predictor_68_face_landmarks.dat\\shape_predictor_68_face_landmarks.dat")
+predictor = dlib.shape_predictor(r"C:\Users\Lenovo\Desktop\AISC2024 IOTMLLAB\shape_predictor_68_face_landmarks.dat")
 while True:
     _, frame = cap.read()
+    frame = cv2.flip(frame, 1)
     nose_mask.fill(0)
     gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = detector(frame)
