@@ -6,7 +6,7 @@ tile = 100
 count = 0
 m = M = 0
 setc = 0
-datfile ='C:\\Users\\LENOVO\\Documents\\LIBRARIES\\dlib libs\\shape_predictor_68_face_landmarks.dat\\shape_predictor_68_face_landmarks.dat'
+datfile =r"C:\Users\Lenovo\Desktop\AISC2024 IOTMLLAB\shape_predictor_68_face_landmarks.dat"
 
 cap = cv2.VideoCapture(0)
 _, frame = cap.read()
